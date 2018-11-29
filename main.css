@@ -2,6 +2,7 @@ body{
   padding: 0;
   margin: 0;
   background-color: #E5E5E5;
+  font-family: 'heebo';
 }
 * {
   border: 1px solid goldenrod;
@@ -11,4 +12,20 @@ body{
 }
 .halfsection {
   height: 50vh;
+}
+header {
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+header div {
+  text-align: center;
+  flex: 1;
+  padding-top:25px;
+}
+.logo {
+  flex: 2;
 }
