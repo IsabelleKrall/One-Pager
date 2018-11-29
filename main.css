@@ -1,5 +1,14 @@
 body{
-  width: 100vh;
-  height: 100vh;
+  padding: 0;
+  margin: 0;
   background-color: #E5E5E5;
+}
+* {
+  border: 1px solid goldenrod;
+}
+.section {
+  height: 100vh;
+}
+.halfsection {
+  height: 50vh;
 }
