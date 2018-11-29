@@ -13,6 +13,7 @@ body{
 .halfsection {
   height: 50vh;
 }
+
 header {
   width: 100vw;
   height: 10vh;
@@ -29,3 +30,9 @@ header div {
 .logo {
   flex: 2;
 }
+
+h1 {
+  color: black;
+  font-size: 40px;
+}
+
