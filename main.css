@@ -142,5 +142,6 @@ body{
   margin-top: 30px;
   width: 50vw;
   height: 50vh;
-  padding: 30px solid white;
+  border: 20px solid black;
+  background-color: white;
 }
