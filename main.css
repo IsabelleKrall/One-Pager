@@ -1,5 +1,147 @@
 body{
-  width: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  font-family: 'Heebo', sans-serif;
+}
+/* * {
+  border: 1px solid white;
+} */
+
+.section {
   height: 100vh;
-  background-color: #E5E5E5;
+}
+.halfsection {
+  height: 50vh;
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-direction: row;
+  background-color: black;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+
+.header p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  color: white;
+}
+.logo {
+  flex: 2;
+}
+
+.first{
+  height: 100%;
+  width: 100%;
+  /* background-image: url("images/hero-bw2.jpg"); */
+  display: flex;
+  justify-content: center;
+  /* background-size: cover; */
+  background-color: #eeee;
+}
+
+.hero-img{
+  width: 100vw;
+  height: 100vh;
+}
+
+.second {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.quote {
+  background-color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #C4C4C4;
+}
+
+.third {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("img/second.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: black;
+}
+
+/* .second-img{
+  width: 100%;
+  height: 100%;
+} */
+
+.quality-content{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #eeee;
+  width: 350px;
+  height: 350px;
+  margin-top: 15px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.headline{
+  font-size: 70px;
+  font-weight: 100;
+  color: #eeee;
+  margin-top: 30px;
+}
+
+.button{
+  width: 200px;
+  height: 50px;
+  padding: 8px;
+  margin-top: 25px;
+  border-radius: 10px;
+  background-color: #65a1c6;
+  display: flex;
+  align-self: center;
+  /* align-content: center; */
+  justify-content: center;
+
+  font-size: 30px;
+  font-weight: 100;
+  color: #eeee;
+}
+
+.fourth{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color:white;
+}
+
+.image-box{
+  /* margin-top: 30px; */
+  width: 50vw;
+  height: 50vh;
+  border: 20px solid white;
+  background-color: white;
 }
