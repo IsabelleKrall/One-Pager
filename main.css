@@ -4,9 +4,9 @@ body{
   background-color: black;
   font-family: 'Heebo', sans-serif;
 }
-* {
+/* * {
   border: 1px solid white;
-}
+} */
 
 .section {
   height: 100vh;
@@ -139,9 +139,9 @@ body{
 }
 
 .image-box{
-  margin-top: 30px;
+  /* margin-top: 30px; */
   width: 50vw;
   height: 50vh;
-  border: 20px solid black;
+  border: 20px solid white;
   background-color: white;
 }
