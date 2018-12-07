@@ -4,9 +4,9 @@ body{
   background-color: black;
   font-family: 'Heebo', sans-serif;
 }
-* {
+/* * {
   border: 1px solid white;
-}
+} */
 
 .section {
   height: 100vh;
@@ -27,6 +27,7 @@ p {
   line-height: 32px;
   font-size: 16px;
   color: white;
+  padding: 0 50px 0 50px;
 }
 .header {
   width: 98vw;
@@ -134,33 +135,217 @@ p {
   align-self: center;
   /* align-content: center; */
   justify-content: center;
-
   font-size: 30px;
   font-weight: 100;
   color: #eeee;
 }
 
-.grid-container {
-  display: grid;
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: inherit;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(6, auto); */
 }
 .grid-text {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .grid-image {
+  height: 50vh;
+  width: 40vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flex {
+  display:flex;
+  flex-direction: row;
+}
+.first-image {
+  background-image: url('img/vev.jpg');
+}
+.second-image {
+  background-image: url('img/vev.jpg');
+}
+.third-image {
+  background-image: url('img/vev.jpg');
+}
+.image-box {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.flex-section {
+  height: 200vh;
+}
+.second-text {
+  order: 1;
+}
+.icon {
+  display:none;
+  z-index: 3;
+  position: fixed;
+  right: -2%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  transform: scale(0.6);
+}
 
+.hamburger {
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38px;
+  height: 2px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transition: 0.5s;
 }
-.grid-section {
-  height: 300vh;
+
+.hamburger:after {
+  content: '';
+  position: fixed;
+  width: 38px;
+  height: 2px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
+
+.hamburger:before {
+  content: '';
+  position: fixed;
+  width: 38px;
+  height: 2px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.hamburger:before {
+  top: -12px;
+}
+
+.hamburger:after {
+  top: 12px;
+}
+
+.icon.active .hamburger {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.icon.active .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+
+.icon.active .hamburger:after {
+  top: 0;
+  transform: rotate(135deg);
+  transition: 0.5s
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  overflow: auto;
+  color: white;
+  font-size: 2.5vw;
+  z-index: 2;
+  background-color: black;
+}
+
+.modal-content {
+  margin: auto;
+  margin-top: 13%;
+  width: 70%;
+}
+
+.modal.active {
+  display: block;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.text-item {
+  position: relative;
+  left: -100%;
+  text-align: center;
+}
+
+.text-item:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.text-item.active {
+  animation-name: text;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.text-2.active {
+  animation-delay: 0.15s;
+}
+
+.text-3.active {
+  animation-delay: 0.3s;
+}
+
+.text-4.active {
+  animation-delay: 0.45s;
+}
+
+@keyframes text {
+  from {
+    left: -100%
+  }
+
+  to {
+    left: 0%
+  }
+}
+
 @media screen and (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+
+  .grid-image {
+    width: 100%;
+  }
+  .flex-section {
+    height: auto;
+  }
+  p {
+    padding: 0 5px 0 5px;
+  }
+  .header {
+    display: none;
+  }
+  .modal-content {
+    margin-top: 40%;
+  }
+  .icon {
+    top: -1%;
+    display:block;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .second-text {
+    order: 0;
   }
 }
