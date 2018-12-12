@@ -30,6 +30,7 @@ h2 {
   line-height: normal;
   font-size: 40px;
   color: white;
+  padding: 0 50px 0 50px;
 }
 p {
   font-weight: 300;
@@ -84,6 +85,7 @@ p {
 }
 
 .headline-box {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
   display: flex;
   position: absolute;
   justify-content: center;
@@ -101,9 +103,11 @@ p {
 @keyframes textfade {
   from {
     color: rgba(255, 255, 255, 0);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
   }
   to {
     color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
   }
 }
 
@@ -193,11 +197,12 @@ p {
   letter-spacing: 13px;
 }
 .our-story-text {
-  margin-top: 80px;
+  margin-top: 100px;
   font-size: 24px;
   font-weight: 200;
   letter-spacing: 2px;
   line-height: 1.5;
+  padding: 0 100px 0 100px;
 }
 .about-text {
   margin-top: 200px;
@@ -253,7 +258,6 @@ p {
 .grid-text {
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
