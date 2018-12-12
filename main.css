@@ -534,9 +534,13 @@ footer {
   .grid-image {
     width: 100%;
   }
+  .socialmedia {
+    margin: 0;
+  }
   .grid-text {
     padding: 20px;
   }
+
   .fourth {
     height: 70vh;
   }
@@ -600,15 +604,12 @@ footer {
   .backtotop {
     margin-right: 0;
   }
-  .footer-title,
-  .designed-by {
-    text-align: center;
-  }
 
   .designed-by {
+    text-align: center;
     font-weight: 500;
-    margin-bottom: 5px;
-    margin-top: 40px;
+    left: -7%;
+    position: relative;
   }
   .about-story {
     text-align: center;
